@@ -1,25 +1,16 @@
 # 🧬 RNA-Seq Processing Pipeline for E. coli
 This bash script automates a complete RNA-seq data preprocessing and alignment workflow for E. coli datasets using high-performance computing (HPC) with PBS job scheduling.
-
-🚀 Pipeline Overview
-The workflow includes:
 ## Quality Control
 Launches MultiQC to summarize initial data quality.
-
-Adapter Trimming
+## Adapter Trimming
 Uses fastp to trim sequencing adapters and improve read quality.
-
-Index Building
+## Index Building
 Builds a HISAT2 genome index from the E. coli reference genome.
-
-Read Alignment
+## Read Alignment
 Aligns trimmed reads to the reference genome using HISAT2 and converts .sam files to .bam with samtools.
-
-File Organization
+## File Organization
 Moves all resulting .bam files to a dedicated output directory.
-
-Gene Expression Quantification
+## Gene Expression Quantification
 Runs featureCounts to generate a gene count matrix from the aligned .bam files.
-
-Final Quality Summary
+## Final Quality Summary
 Uses MultiQC to summarize read assignment statistics from the count summary file.
