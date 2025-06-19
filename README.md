@@ -1,4 +1,4 @@
-# 🧬 RNA-Seq Processing Pipeline for E. coli
+# 🧬 RNA-Seq preprocessing Processing bash Pipeline 
 This bash script automates a complete RNA-seq data preprocessing and alignment workflow for E. coli datasets using high-performance computing (HPC) with PBS job scheduling.
 ## Quality Control
 Launches MultiQC to summarize initial data quality.
